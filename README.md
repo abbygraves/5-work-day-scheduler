@@ -1,20 +1,22 @@
 # Third-Party APIs Challenge: Work Day Scheduler
-# Title
-
 
 ## **Description**
+The purpose of this project was to create a simple work day scheduler/calendar that gives the user the ability to save events for each hour of the day. 
 
-
-**Link to deployed Github page ➝** [insert active link](insert display name of link)
+**Link to deployed Github page ➝** [https://abbygraves.github.io/5-work-day-scheduler/](https://abbygraves.github.io/5-work-day-scheduler/)
 
 <br/>
 
 ## **Built With:**
-+ HTML
-+ CSS <img align="right" src="insert image relative path" width="700px" />
++ Dynamically Updated HTML
++ CSS
++ Bootstrap
++ jQuery
++ JavaScript
++ Moment.js <img align="right" src="" width="700px" />
 
 <br/>
 
 ## **What I Did**
-
++ 
 
