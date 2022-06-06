@@ -16,10 +16,10 @@ function colorCoding() {
     if (i < currentTime) {
       $("#" + i).addClass("past");
     } 
-    else if (i === time) {
+    else if (i === currentTime) {
       $("#" + i ).addClass("present"); 
     } 
-    else if (i > time) {
+    else if (i > currentTime) {
       $("#" + i).addClass("future");
     }
   }
