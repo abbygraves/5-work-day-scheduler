@@ -1,6 +1,7 @@
 var textInput = [];
 var currentTime = moment().hours();
 var currentDay = document.querySelector("#currentDay");
+var textArea = document.querySelector(".text-field");
 var currentDate = new Date();
   
 
@@ -45,8 +46,20 @@ function saveInput(event) {
   //localStorage.setItem("textInput", JSON.stringify());
   //console.log($(event.target).siblings()[1].value);
   var textVal = $(event.target).siblings()[1].value;
-  var timeId = $(event.target).parents()[1].id;
+  var timeId = $(event.target).parents()[0].id;
   localStorage.setItem(timeId, textVal);
+
+};
+
+function loadStorage() {
+  for (let i = 8; i <=17; i++) {
+    localStorage.getItem(i);
+    console.log(localStorage.getItem(i))
+    $("#" + i).children()[i] = localStorage.getItem(i);
+    //console.log($("#" + i).children()[1]);
+    //console.log(textInput)
+    $("#" + i).append(localStorage.getItem(i));
+  }
 };
 
 
@@ -54,6 +67,7 @@ function saveInput(event) {
 
 showDate();
 colorCoding();
+loadStorage();
 
 
 
