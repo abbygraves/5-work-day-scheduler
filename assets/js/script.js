@@ -24,6 +24,34 @@ function colorCoding() {
   }
 };
 
+
+$("textarea").on("click", function () {
+  console.log("text clicked!!!!!")
+  var text = $(this)
+    .text()
+    .trim();
+
+  var textInput = $("<textarea>")
+    .val(text);
+
+  $(this).replaceWith(textInput);
+  
+  textInput.trigger("focus");
+});
+
+$(".saveBtn").on("click", saveInput);
+
+function saveInput(event) {
+  //localStorage.setItem("textInput", JSON.stringify());
+  //console.log($(event.target).siblings()[1].value);
+  var textVal = $(event.target).siblings()[1].value;
+  var timeId = $(event.target).parents()[1].id;
+  localStorage.setItem(timeId, textVal);
+};
+
+
+
+
 showDate();
 colorCoding();
 
@@ -31,6 +59,4 @@ colorCoding();
 
 
 
-// var save = function () {
-//   localStorage.setItem("tasks", JSON.stringify(tasks));
-// };
+
