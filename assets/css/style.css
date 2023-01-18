@@ -12,7 +12,6 @@ textarea {
   border-left: 1px solid black;
   padding: 10px;
   width: 80%;
-
 }
 
 span {
@@ -56,7 +55,6 @@ span {
   background-color: #d3d3d3;
   color: black;
   border-radius: 15px;
-  /* position: relative; */
 }
 
 .present {
@@ -85,8 +83,3 @@ span {
   transition: all .3s ease-in-out;
   display: inline;
 }
-
-/* text {
-  padding: 0px;
-  align-items: center;
-}  */
